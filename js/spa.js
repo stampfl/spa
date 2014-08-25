@@ -12,11 +12,11 @@
 */
 /* global $, spa */
 
-var spa = function () {
+var spa = (function () {
   var initModule = function ( $container ) {
     $container.html(
       '<h1 style="display:inline-block; margin:25px;">'
-      + 'hellow world!'
+      + 'hello world!'
       + '</h1>'
     );
   };
@@ -24,5 +24,3 @@ var spa = function () {
   return { initModule: initModule };
 
 }());
-
-// Module /spa/
